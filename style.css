@@ -1,0 +1,295 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 50px 20px;
+  color: white;
+}
+
+header h1 span {
+  color: #ffdd57;
+}
+
+/* Profile Picture */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  padding: 50px 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 2rem;
+}
+
+/* Timeline Cards */
+.timeline {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Certificates */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cert-card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cert-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Resume */
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.resume-container img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn {
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffdd57;
+  color: #222;
+}
+
+/* Skills */
+.skills-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.progress {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: #ffdd57;
+  color: #222;
+  text-align: right;
+  padding-right: 10px;
+  height: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+/* Contact Section */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact-card h3 {
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.contact-card p a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-buttons .btn {
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-buttons .btn:hover {
+  background: #ffdd57;
+  color: #222;
+}
+
+.hire-btn {
+  background: #25D366; /* WhatsApp green */
+}
+
+.hire-btn:hover {
+  background: #1ebc57;
+  color: white;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.contact-form h3 {
+  margin-bottom: 15px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ffdd57;
+  color: #222;
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.slide-up {
+  animation: slideUp 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
